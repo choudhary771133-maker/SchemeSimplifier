@@ -1,0 +1,80 @@
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f5f7fb;
+  color: #1f2937;
+}
+.container { width: min(940px, 92%); margin: auto; }
+.hero {
+  padding: 42px 0;
+  background: linear-gradient(135deg, #283593, #5e35b1);
+  color: white;
+}
+.tag { font-size: 13px; letter-spacing: 2px; font-weight: bold; }
+h1 { margin: 8px 0; font-size: clamp(30px, 6vw, 52px); }
+.hero p:last-child { max-width: 650px; line-height: 1.6; }
+.card, .scheme {
+  background: white;
+  border-radius: 16px;
+  padding: 24px;
+  margin-top: 24px;
+  box-shadow: 0 5px 20px rgba(0,0,0,.07);
+}
+h2 { margin-top: 0; }
+form { display: grid; gap: 16px; }
+label { font-weight: bold; display: grid; gap: 7px; }
+input, select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 9px;
+  font-size: 16px;
+}
+button {
+  border: 0;
+  border-radius: 9px;
+  padding: 13px 18px;
+  background: #283593;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+button:hover { opacity: .9; }
+.hidden { display: none; }
+.results { margin-top: 30px; }
+.section-heading { display: flex; justify-content: space-between; align-items: center; }
+#resultCount { color: #5e35b1; font-weight: bold; }
+.scheme h3 { margin-top: 0; }
+.badge {
+  display: inline-block;
+  padding: 5px 9px;
+  border-radius: 20px;
+  background: #eee;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+.scheme ul { padding-left: 20px; line-height: 1.7; }
+.scheme .apply {
+  display: inline-block;
+  margin-top: 8px;
+  text-decoration: none;
+  padding: 10px 14px;
+  border-radius: 8px;
+  background: #5e35b1;
+  color: white;
+  font-weight: bold;
+}
+.how { margin-bottom: 24px; }
+.steps { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; }
+.steps div { display: grid; gap: 8px; }
+.steps b {
+  width: 32px; height: 32px; border-radius: 50%;
+  display: grid; place-items: center; background: #283593; color: white;
+}
+.notice { font-size: 13px; color: #6b7280; margin: 20px 0 35px; line-height: 1.5; }
+footer { text-align: center; padding: 24px; background: #111827; color: white; }
+@media (max-width: 700px) {
+  .steps { grid-template-columns: 1fr 1fr; }
+}

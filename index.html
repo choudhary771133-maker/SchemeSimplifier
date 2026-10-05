@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SchemeSimplifier – Samjho, Apply Karo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="hero">
+    <div class="container">
+      <p class="tag">SCHEMESIMPLIFIER</p>
+      <h1>Samjho. Check Karo. Apply Karo.</h1>
+      <p>Simple guidance for scholarships, government schemes and student opportunities.</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <h2>Find opportunities for you</h2>
+      <form id="profileForm">
+        <label>Age
+          <input id="age" type="number" min="1" max="100" placeholder="e.g. 18" required>
+        </label>
+
+        <label>Education
+          <select id="education" required>
+            <option value="">Select</option>
+            <option value="12th">Class 12 / Passed 12th</option>
+            <option value="undergraduate">Undergraduate (BBA, BA, BCom, etc.)</option>
+            <option value="postgraduate">Postgraduate</option>
+          </select>
+        </label>
+
+        <label>State
+          <select id="state" required>
+            <option value="">Select</option>
+            <option value="Rajasthan">Rajasthan</option>
+            <option value="Other">Other</option>
+          </select>
+        </label>
+
+        <button type="submit">Check My Opportunities</button>
+      </form>
+    </section>
+
+    <section id="results" class="results hidden">
+      <div class="section-heading">
+        <h2>Recommended opportunities</h2>
+        <span id="resultCount"></span>
+      </div>
+      <div id="schemeList"></div>
+    </section>
+
+    <section class="card how">
+      <h2>How it works</h2>
+      <div class="steps">
+        <div><b>1</b><span>Enter your details</span></div>
+        <div><b>2</b><span>Check possible eligibility</span></div>
+        <div><b>3</b><span>See documents & deadline</span></div>
+        <div><b>4</b><span>Follow steps and visit the official link</span></div>
+      </div>
+    </section>
+
+    <p class="notice">Prototype note: sample information is for demonstration. Always verify current eligibility, dates and application instructions on the official source before applying.</p>
+  </main>
+
+  <footer>SchemeSimplifier • Prototype for HSC 2026</footer>
+  <script src="script.js"></script>
+</body>
+</html>
